@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #1b1b1a;
+    --cor2: #2d2d2d;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 400px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.247);
+    background-color: var(--cor2);
+    position: relative;
+}
+
+img {
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.247);
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+
+button {
+    width: 100px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.prev {
+    box-shadow: inset 7px 5px 20px -20px rgba(255, 255, 255, 0.35) 
+}
+
+.next {
+    box-shadow: inset -7px 5px 20px -20px rgba(255, 255, 255, 0.35) 
+}
+
+.fa-solid {
+    font-size: 60px;
+    color: white;
+}
+
+.item-active {
+    display: block;
+}
+
