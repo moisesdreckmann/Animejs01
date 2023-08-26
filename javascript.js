@@ -1,6 +1,6 @@
 const btnLeft = document.querySelector('.prev')
 const btnNext = document.querySelector('.next')
-const imgs = document.querySelectorAll('.img1, .img2, .img3')
+const imgs = document.querySelectorAll('.img')
 
 imgs[0].classList.add('item-active')
 imgs[0].style.opacity = '1'
