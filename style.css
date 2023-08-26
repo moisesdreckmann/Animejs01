@@ -39,6 +39,7 @@ img {
     object-fit: cover;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.247);
     position: absolute;
+    display: none;
     opacity: 0;
 }
 

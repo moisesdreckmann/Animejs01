@@ -27,6 +27,7 @@ function trocaNext(event) {
         contador = 0
     }
     imgs[contador].classList.add('item-active');
+    aplicarAnimacao(imgs[contador])
 }
 
 function aplicarAnimacao(element) {
