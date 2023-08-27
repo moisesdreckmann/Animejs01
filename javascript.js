@@ -4,13 +4,9 @@ const imgs = document.querySelectorAll('.img')
 
 imgs[0].classList.add('item-active')
 imgs[0].style.opacity = '1'
-
-btnLeft.addEventListener('click', trocaPrev)
-btnNext.addEventListener('click', trocaNext)
-
 let contador = 0
 
-function trocaPrev(event) {
+btnLeft.addEventListener('click', () => {
     imgs[contador].classList.remove('item-active')
     contador--
     if (contador < 0) {
@@ -18,9 +14,9 @@ function trocaPrev(event) {
     }
     imgs[contador].classList.add('item-active')
     aplicarAnimacao(imgs[contador])
-}
+})
 
-function trocaNext(event) {
+btnNext.addEventListener('click', () => {
     imgs[contador].classList.remove('item-active')
     contador++
     if (contador >= imgs.length) {
@@ -28,7 +24,7 @@ function trocaNext(event) {
     }
     imgs[contador].classList.add('item-active');
     aplicarAnimacao(imgs[contador])
-}
+})
 
 function aplicarAnimacao(element) {
     anime({
